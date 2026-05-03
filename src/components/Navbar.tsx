@@ -30,7 +30,7 @@ export default function Navbar({ search, onSearchChange, mode, onToggleMode }: N
           variant="h6"
           sx={{ fontWeight: 800, letterSpacing: "-0.02em", flexShrink: 0 }}
         >
-          Lumen<span style={{ opacity: 0.5 }}>Shop</span>
+          Dream <span style={{ opacity: 0.5 }}>Drape</span>
         </Typography>
         <Box
           sx={{
