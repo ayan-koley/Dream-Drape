@@ -11,14 +11,14 @@ import {
   createTheme,
   useMediaQuery,
 } from "@mui/material";
-import Navbar from "@/components/Navbar";
-import ProductCard from "@/components/ProductCard";
-import ProductSkeleton from "@/components/ProductSkeleton";
-import { products, categories } from "@/data/products";
+import Navbar from '../components/Navbar.tsx';
+import ProductCard from "../components/ProductCard";
+import ProductSkeleton from "../components/ProductSkeleton";
+import { products, categories } from "../data/products";
 
 export default function Home() {
   const prefersDark = useMediaQuery("(prefers-color-scheme: dark)");
-  const [mode, setMode] = useState<"light" | "dark">(prefersDark ? "light" : "dark");
+  const [mode, setMode] = useState<"light" | "dark">(prefersDark ? "dark" : "light");
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [loading, setLoading] = useState(true);
