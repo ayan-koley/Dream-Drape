@@ -18,10 +18,11 @@ import { products, categories } from "@/data/products";
 
 export default function Home() {
   const prefersDark = useMediaQuery("(prefers-color-scheme: dark)");
-  const [mode, setMode] = useState<"light" | "dark">(prefersDark ? "dark" : "light");
+  const [mode, setMode] = useState<"light" | "dark">(prefersDark ? "light" : "dark");
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     const t = setTimeout(() => setLoading(false), 700);
