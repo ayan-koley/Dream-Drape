@@ -51,9 +51,9 @@ export default function ProductCard({ product }: { product: Product }) {
         <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
           {product.description}
         </Typography>
-        <Typography variant="h6" color="primary" sx={{ mt: 2, fontWeight: 800 }}>
+        {/* <Typography variant="h6" color="primary" sx={{ mt: 2, fontWeight: 800 }}>
           ${product.price.toFixed(2)}
-        </Typography>
+        </Typography> */}
       </CardContent>
       <CardActions sx={{ p: 2, pt: 0 }}>
         <Button
